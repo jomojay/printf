@@ -80,7 +80,12 @@ int print_p(va_list list);
 int print_unsigned(va_list list);
 int print_rot13(va_list list);
 int print_r(va_list list);
-
+void _write(buffer *b_r, char c);
+void _write_str(buffer *b_r, char *s);
+void _write_tmpbuf(buffer *b_r);
+int get_flags(char c, han_s *f);
+int get_modifier(char *s, han_s *handler);
+char *get_width(char *s, han_s handler, va_list list);
 
 
 
