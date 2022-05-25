@@ -40,11 +40,11 @@ int get_flags(char c, han_s *f)
  *@handler:handler struct
  *Return:1 if modifier is valid
  */
-int get_modifier(char s, han_s *handler)
+int get_modifier(char *s, han_s *handler)
 {
 	int i = 0;
 
-	switch (s)
+	switch (*s)
 	{
 	case 'h':
 		i = 1;
