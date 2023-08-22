@@ -43,6 +43,12 @@ int print_p(unsigned long int num)
 		count += _putchar(d0 + '0');
 	return (count);
 }
+/**
+ * add_printer - prints memory address
+ * @ap: memroy address argument
+ *
+ * Return: Total number of digits printed
+ */
 int add_printer(va_list ap)
 {
 	int count = 0;

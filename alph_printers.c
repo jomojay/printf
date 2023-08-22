@@ -43,7 +43,7 @@ int str_printer(va_list ap)
 
 	while (str[i] != '\0')
 	{
-		c = str[i}
+		c = str[i];
 		_putchar(c);
 		i++;
 		count++;

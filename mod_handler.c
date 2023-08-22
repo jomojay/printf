@@ -18,7 +18,6 @@ int (*mod_handler(char spec))(va_list fp)
 				{'X', bX_printer},
 				{'u', dc_printer},
 				{'p', add_printer},
-				{'r', rev_string},
 				{'\0', NULL}};
 
 	while (print_func[i].spec != '\0')
