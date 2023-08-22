@@ -3,7 +3,7 @@
 /**
  * print_p- prints each digits of an address
  * @num: unsigned long int to be converted and printed
- * Return: total number of digits printed
+ * Return: The total number of digits printed
  */
 int print_p(unsigned long int num)
 {
