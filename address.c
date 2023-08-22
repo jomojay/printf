@@ -10,7 +10,9 @@ int print_p(unsigned long int num)
 	unsigned long int d0 = 0;
 	int count = 0;
 
-	if (num <= 0)
+	if (num == '\0')
+		return (count);
+	if (num == 0)
 		return (count);
 	d0 = num % 16;
 	num = num / 16;
