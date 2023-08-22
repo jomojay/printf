@@ -7,28 +7,22 @@
  */
 int print_num(int num)
 {
-	int d0 = 0, count = 0;
+	int count = 0;
 
 	if (num < 0)
 	{
-		num = (-1) * num;
-		count += _putchar('-');
+		_putchar('-');
+		num = -num;
+		count++;
 	}
-	if (num == 0)
-		return (count += _putchar('0'));
-	if (num >= 10)
-	{
-		d0 = num % 10;
-		num = num / 10;
-		if (num > 0)
-			count += print_num(num);
-		count += _putchar(d0 + '0');
-	}
-	else
-		count += _putchar(num + '0');
-	return (count);
-}
 
+	if (num / 10 != 0)
+	{
+		count += print_num(num / 10);
+	}
+
+	return (count + _putchar(num % 10 + '0'));
+}
 /**
  * int_printer - prints integers to stdout
  * @ap: pointer to argument to be printed
