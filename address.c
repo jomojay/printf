@@ -57,6 +57,6 @@ int add_printer(va_list ap)
 	num = (unsigned long int)va_arg(ap, void *);
 	count += _putchar('0');
 	count += _putchar('x');
-	count = print_p(num);
+	count += print_p(num);
 	return (count);
 }
