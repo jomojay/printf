@@ -2,8 +2,8 @@
 
 /**
  * mod_handler - compares a modifier and return pointer to its function
- * @spec: modifier character
- * Return: Return a pointer to the corresponding function
+ * @spec: a modifier character
+ * Return: Returns a pointer to the corresponding function
  */
 int (*mod_handler(char spec))(va_list fp)
 {
