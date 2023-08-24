@@ -38,7 +38,7 @@ int dc_printer(va_list ap);
 int add_printer(va_list ap);
 int print_p(unsigned long int num);
 int rev_string(va_list ap);
-int revp(char *c);
+int revs_p(char *c);
 int print_bX(unsigned int num);
 int bX_printer(va_list ap);
 int print_dc(unsigned int num);
