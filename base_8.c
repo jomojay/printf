@@ -26,9 +26,8 @@ int print_b8(unsigned int num)
 int b8_printer(va_list ap)
 {
 	int count = 0;
-
 	unsigned int num = va_arg(ap, unsigned int);
-	
+
 	count += print_b8(num);
 	return (count);
 }
