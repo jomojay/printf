@@ -10,6 +10,8 @@ int revs_p(char *s)
 	int len = 0, count = 0, i = 0, j = 0;
 	char temp;
 
+	if (s == NULL)
+		return (-1);
 	while (s[len] != '\0')
 	{
 		len++;
