@@ -14,6 +14,7 @@ int main(void)
     unsigned int ui;
     void *addr;
     char str [] = "Alx School";
+    char ptr [] = "printf task";
 
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
@@ -40,6 +41,6 @@ int main(void)
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n", str);
-    printf("Unknown:[%r]\n");
+    _printf("rotate13:[%r]\n", ptr);
     return (0);
 }

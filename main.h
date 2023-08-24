@@ -43,6 +43,8 @@ int print_bX(unsigned int num);
 int bX_printer(va_list ap);
 int print_dc(unsigned int num);
 int dc_printer(va_list ap);
+int rot_13(va_list ap);
+int rot13(char *s);
 int _printf(const char *format, ...);
 void convert_negative(unsigned int *positive_num, int retrieve_num);
 
