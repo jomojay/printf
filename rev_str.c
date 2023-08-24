@@ -14,14 +14,14 @@ int revs_p(char *s)
 	{
 		len++;
 	}
-	len–;
+	len--;
 	while (i < len)
 	{
 		temp = s[i];
 		s[i] = s[len];
 		s[len] = temp;
 		i++;
-		len–;
+		len--;
 	}
 	while (s[j] != '\0')
 	{
